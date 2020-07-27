@@ -1,0 +1,1103 @@
+/* --------------------------
+:: Template Name: GPS Inventory 
+:: Template Author: Essential Softwares
+:: Template Author URI: https://www.essentialsofts.com/
+:: Description: GPS Inventories...
+:: Version: v1.0
+:: Created: 07/28/2020  MM/DD/YYYY
+-------------------------- */
+
+/*------------------------------------------------------------------------------------
+
+[Table of contents]
+
+01.Base CSS
+02.Main Header CSS
+03.Main Banner CSS
+4. contact-us Area CSS
+5. contact-us Area CSS
+6. Newsletter Area CSS
+7. Footer Area CSS
+8. Key Points
+9. About Wrap
+10. Services
+11. Legislation
+12. Terms & Conditions
+13. Contact Us
+14. Preloader CSS
+15. Blog Details
+
+
+--------------------------------------------------------------------------------------*/
+
+/* -----------------------------------
+:: 1. Base CSS Start
+------------------------------------ */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif, "proxima-nova", "Helvetica Neue", Helvetica, Arial;
+    background-color: #fff;
+    font-weight: 400;
+}
+
+
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 0;
+    color:#000000;
+
+}
+a{
+	color: #ffffff;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #CB0620;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul > li{
+	color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.card-body{
+    color: #636d75;
+    font-size: 14px;
+}
+
+/* ------ Helper Classes -------------- */
+
+.bold{
+    font-weight: 600;
+}
+
+.mobile-device {
+    background: #fff;
+    border: 1px solid #edf4f8;
+    margin: 0 auto;
+    position: relative;
+    max-width: 255px;
+    border-radius: 36px;
+    padding: 55px 0;
+    -webkit-box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+    box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+
+
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pr-15 {
+    padding-right: 15px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pr-50 {
+    padding-right: 50px;
+}
+
+.pr-100 {
+    padding-right: 100px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pl-50 {
+    padding-left: 50px;
+}
+
+.pl-100 {
+    padding-left: 100px;
+}
+
+section{
+	padding: 50px 0;
+}
+
+.section-heading{
+    margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.section-heading > h2 {
+    font-weight: 300;
+    color: #636d75;
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section-heading > p {
+    font-weight: 300;
+    color: #636d75;
+    margin: 0;
+}
+
+.line-title-white,
+.line-title-center,
+.line-title-left {
+    width: 80px;
+    height: 2px;
+    background-color: #7d1a1b;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.line-title-center {
+    margin-left: calc(50% - 40px);
+}
+.line-title-left {
+    margin-left: 5px;
+}
+
+.line-title-white,
+.line-title-center-footer,
+.line-title-left {
+    width: 80px;
+    height: 2px;
+    background-color: #A40C24;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.line-title-center-footer {
+    margin-left: calc(50% - 40px);
+    background-color: #ffffff;
+}
+
+
+.btn{
+    min-width: 167px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.img-padding-tb{
+    padding: 30px 0 30px;
+}
+
+/* --------------------------
+:: 2. Header Area CSS
+-------------------------- */
+
+.main-header {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+    background-color: #ffffff;
+}
+.navbar{
+	padding: 1.2rem 1rem;
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+
+.top_menu .navbar-brand {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}
+
+.top_menu .navbar-brand:hover,
+.top_menu .navbar-brand:focus {
+    color: #fff;
+}
+
+.top_menu .navbar-brand .logo{
+    height: 60px;
+    margin-top: -8px;
+}
+
+.top_menu .navbar-brand .logo-sticky{
+    height: 50px;
+    margin-top: -8px;
+}
+
+.top_menu{
+    position: relative;
+    z-index: 2;
+}
+
+.top_menu #nav .nav-link {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 10px 15px;
+}
+
+.top_menu #nav .nav-link:hover {
+    color: #912325;
+}
+
+.top_menu nav ul li > a:hover {
+    color: #912325;
+}
+
+.line {
+    border-top: 1px solid #f8f9fa;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* stcicky css */
+.main-header.sticky {
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    height: 82px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.main-header.sticky .top_menu .navbar-brand {
+    color: #ffffff;
+}
+
+.main-header.sticky .top_menu #nav .nav-link {
+    color: #000000;
+}
+
+.main-header.sticky .top_menu #nav .nav-link:hover{
+    color: #912325;
+}
+/*----------------------------------------------------*/
+.table {
+    margin-top: 2%;
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:20px;
+    -moz-border-radius:6px;
+}
+.price{
+    margin-top: 5%;
+    border-bottom:1px #000000 solid;
+}
+.properties p a{
+    color:red;
+}
+.properties p a:hover{
+    color:grey;
+}
+.term{
+    margin-top:14%;
+}
+.terms a {
+    color: red;
+}
+.terms li{
+    color: #000000;
+}
+.tab-one{
+    border-radius: 15px 0px 0px 0px;
+}
+.tab-two{
+    border-radius: 0px 15px 0px 0px;
+}
+.tab-four{
+    border-radius: 0px 0px 0px 15px;
+}
+.tab-five{
+    border-radius: 0px 0px 15px 0px;
+}
+/*--------------------------------------*/
+
+/* --------------------------
+:: 3. Main Banner Area CSS
+-------------------------- */
+.app-img img{
+    width: 100%;
+    margin-top: 25%;
+}
+
+.wlcm-line p{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.main_banner_area{
+    padding: 130px 0 70px;
+    background-image: url(http://via.placeholder.com/1920x500);
+    min-height: 680px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+}
+.main_banner_area:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: -moz-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    background-image: -webkit-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    background-image: -ms-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    background-image: -linear-gradient(150deg, #A40C24, #434343, #A40C24);
+    opacity: 1;   
+}
+.main_banner_area_blog{
+	background: rgba(0, 0, 0, 0) url(../images/blog-img/5.jpg) no-repeat scroll center center / cover;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.main_banner_area_blog:before{
+	background: rgba(76, 0, 1, 0.5) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.info-blog a{
+    color:white;
+}
+
+
+
+.main_banner_area .info{
+    padding: 82px 0;
+}
+
+.blog{
+	padding: 90px 0;
+}
+
+.info > p{
+    color: #f1f2f3;
+}
+
+.info button{
+    color: #fff;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+}
+
+.info button:hover {
+    background-color: #ffffff;
+    color: #A40C24;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+}
+
+
+/* --------------------------
+:: 4. contact-us Area CSS
+-------------------------- */
+
+
+#faq .card-header{
+    background-color: white;
+}
+
+#faq .card{
+    margin-bottom: 30px;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    -o-border-image: -o-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    border-image: linear-gradient(135deg, #A40C24, #434343, #A40C24);
+}
+
+.faq-img{
+    margin-bottom: 20px;
+}
+
+
+/* --------------------------
+:: 5. contact-us Area CSS
+-------------------------- */
+
+.contact-tags{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.contact-tags i{
+    font-size: 25px;
+    color: #ffffff;
+    background: #501112d8;
+    border: 1px #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact-tags p{
+    margin-top: 13px;
+}
+.card{
+    border-radius: 10px;
+    padding: 30px;
+}
+.form-group input{
+    width: 100%;
+    height: 50px;
+}
+.form-group input:focus, .form-group textarea:focus {
+    border: 1px solid #501112d8 !important;
+    box-shadow: 0 0 3px #501112d8 !important;
+    -moz-box-shadow: 0 0 3px #501112d8 !important;
+    -webkit-box-shadow: 0 0 3px #501112d8 !important;
+}
+    
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+form{
+    margin-top: 30px;
+}
+.contact-btn button{
+    margin-top: 20px;
+    border-radius: 30px;
+    float: right;
+}
+.contact-btn button:hover{
+    background-color: #434343;
+    color:white;
+    border-radius: 30px;
+}
+
+/* --------------------------
+:: 6. Newsletter Area CSS
+-------------------------- */
+
+.newsletter_area .section-heading > h2{
+	font-weight: 300;
+    color: linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.newsletter{
+	margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.newsletter .form-control{
+	font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px !important;
+}
+.newsletter span{
+	position: absolute;
+    right: 1%;
+    top: 9%;
+    z-index: 98;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border: 1px solid #501112d8 !important;
+    box-shadow: 0 0 3px #501112d8 !important;
+    -moz-box-shadow: 0 0 3px #501112d8 !important;
+    -webkit-box-shadow: 0 0 3px #501112d8 !important;
+}
+    
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.input-group-btn button:hover{
+    color: #fff;
+    background: #434343;
+    border: 1.5px solid #A40C24;
+    border-radius: 25px 25px 25px 25px !important;
+}
+
+.input-group-btn button{
+    background-image: -webkit-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    color: #fff;
+    border: 1px solid #A40C24;
+    padding: 12px;
+    border-radius: 25px 25px 25px 25px !important;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #434343;
+  border-color: #434343;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #434343;
+    border-color: #434343;
+  }
+
+.subscribe-heading{
+    margin-top: 30px;
+}
+
+.subscribe-heading h4{
+    color: #fff;
+    margin: 0;
+}
+
+
+/* --------------------------
+:: 7. Footer Area CSS
+-------------------------- */
+
+.footer-nav{
+    margin-left: 22%;
+    margin-top: 5%;
+}
+.footer-nav ul{
+    list-style-type: square;
+}
+.footer-nav li{
+    text-align: left;
+}
+.footer-nav-social{
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.footer-nav-social ul{
+    list-style-type: none;
+}
+.footer-nav-social ul li a{
+    font-size: 20px;
+}
+.footer-nav-social ul li a:hover {
+    color: #CB0620;
+}
+footer{
+    background-image: -webkit-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    padding: 50px 0 50px;
+}
+
+.social-icons{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.social-icons li a{
+    background: #434343 none repeat scroll 0 0;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+
+.social-icons li a:hover{
+    background-image: -webkit-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    color: #000;
+}
+
+.copy-right{
+    color: #fff;
+}
+
+.copy-right a{
+    color: #fff;
+}
+/* -------------------------
+:: 8.Key Points
+--------------------------*/
+.kp{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.key-point p{
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5%;
+    font-family: cursive;
+}
+.kp-content p{
+    color: #000000;
+}
+.icon-border{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #434343;
+}
+.key-point-section-icn{
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+.key-point-section-icn i{
+    font-size: 45px;
+}
+.key-point-section-icn p{
+    color: #000000;
+    font-size: 16px;
+    margin-top: 2%;
+}
+.in-txt{
+    color: #d01c42;
+}
+/* --------------------------
+:: 9. About Wrap
+-------------------------- */
+#about-wrap{
+    background-color: #99999947;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.about-content p{
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 3%;
+}
+.about-content-one p{
+    color: #000000;
+    font-family:'Open Sans', sans-serif;
+    font-size: larger;
+}
+
+.hire{
+    margin-bottom: 3%;
+}
+
+.hire-content p{
+    color:#000000;
+    font-size: 15px;
+    font-family:'Open Sans', sans-serif;
+    margin-bottom: 0px!important;
+    margin-top: 1%;
+}
+.hire-button{
+    background-color: #CB0620;
+    color: #ffffff;
+    border-style: none;
+}
+.hire-button:hover{
+    color: #fff;
+    background-color: #A40C24;
+    box-shadow: 2px 2px 2px 2px #00000080;
+    border-style: none;
+}
+/* --------------------------
+:: 10. Services
+-------------------------- */
+#services{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+.service-block{
+    background-color: #e3e3e3;
+    padding: 4%;
+    margin: 2%;
+    margin-top: 5%;
+    border: 1.5px solid gray;
+    border-radius: 30px;
+    
+}
+.service-block-heading i:hover{
+    font-size: larger;
+    color: #CB0620;
+}
+.service-block-heading p{
+    font-size: 16px;
+}
+
+/* --------------------------
+:: 11. Legislation
+-------------------------- */
+#legislation{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+.leg-heading-two{
+    margin-top: 5%;
+}
+/* --------------------------
+:: 12. Term & Conditions
+-------------------------- */
+#tc{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+
+
+
+/* --------------------------
+:: 13. Contact Us
+-------------------------- */
+#contact-us{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+.map iframe{
+    border: 1.5px solid #000000;
+}
+.footer-nav-social-one{
+    margin-top: 5%;
+    text-align: left;
+}
+.footer-nav-social-one ul{
+    list-style-type: none;
+    text-align: left;
+}
+.footer-nav-social-one ul li a{
+    font-size: 14px;
+    color: #CB0620;
+    text-align: left;
+}
+.footer-nav-social-one ul li a:hover {
+    color: #A40C24;
+}
+.footer-nav-one{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.addr-row{
+    margin-top: 5%;
+}
+
+/* --------------------------
+:: 14. Preloader CSS
+-------------------------- */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background-image: -moz-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    background-image: -webkit-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    background-image: -ms-linear-gradient(135deg, #A40C24, #434343, #A40C24);
+    background-image: -linear-gradient(135deg, #A40C24, #434343, #A40C24);
+}
+
+/* --------------------------
+:: 15.Blog Details
+-------------------------- */
+
+.blockquote{
+	background-color: #f6f6f6;
+    border: 0 none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 60px 0 30px 30px;
+    padding: 30px;
+}
+
+.social{
+	background-color: #f6f6f6;
+	padding: 15px 30px;
+}
+
+.social_links{
+	margin-top: -12px;
+}
+
+.social_tags{
+	margin-top: -6px;
+}
+
+.blog-left-sidebar input{
+	background-color: #f7f7f7;
+    border: medium none;
+    border-radius: 10px;
+    height: 45px;
+    padding: 10px 45px 10px 15px;
+    width: 100%;
+}
+
+.blog-left-sidebar button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #434343;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 70px;
+}
+
+.btn-round{
+    padding: 10px;
+	border-radius: 30px;
+    color: #000;
+    background-color: #dddddd; 
+    font-size: 12px;
+}
+.button a:hover{
+    color: #fff;
+    background-color: #434343;
+}
+
+.section_comments{
+    margin-top: 50px;
+}
+
+.ozient-folding-cube {
+  top: 41%;  
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.ozient-folding-cube .ozient-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.ozient-folding-cube .ozient-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: ozient-foldCubeAngle 2.4s infinite linear both;
+          animation: ozient-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.ozient-folding-cube .ozient-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.ozient-folding-cube .ozient-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.ozient-folding-cube .ozient-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.ozient-folding-cube .ozient-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.ozient-folding-cube .ozient-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.ozient-folding-cube .ozient-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes ozient-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes ozient-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
